@@ -9,9 +9,9 @@ public class Maze {
 	public Maze(int size) {
 		//Created constructor
       this.size = size;
+      this.arrayLength = 2 * size + 1;
+      maze = new char[arrayLength][arrayLength];
 
-      maze = new char[2 * size + 1][2 * size + 1];
-      this.arrayLength = maze[0].length;
       //System.out.println(maze[0].length);
       for (int i = 0; i < arrayLength; i += 2) {
          for (int j = 0; j < arrayLength; j++) {
