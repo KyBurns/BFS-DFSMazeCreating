@@ -4,9 +4,10 @@ public class Main
 {
    public static void main(String[] args)
    {
-      Maze m = new Maze(4, 0);
+      Maze m = new Maze(7, 0);
       m.generateRoom();
-      m.printMaze();
+
       m.removeWalls();
+      m.printMaze();
    }
 }
