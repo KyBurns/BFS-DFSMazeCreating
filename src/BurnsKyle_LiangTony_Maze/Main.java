@@ -4,10 +4,12 @@ public class Main
 {
    public static void main(String[] args)
    {
-      Maze m = new Maze(7, 0);
+      Maze m = new Maze(8, 0);
       m.generateRoom();
 
       m.removeWalls();
-      m.printMaze();
+      Maze.printMaze(m.getMaze());
+      System.out.println();
+      m.bfsTraversing();
    }
 }

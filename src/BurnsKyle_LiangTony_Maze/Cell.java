@@ -4,6 +4,8 @@ public class Cell
 {
    private int x;
    private int y;
+   private boolean visited;
+   private int distance;
 
 
 
@@ -11,7 +13,7 @@ public class Cell
    {
       this.x = x;
       this.y = y;
-
+      distance = 0;
    }
 
    public int getX()
@@ -34,8 +36,15 @@ public class Cell
       this.y = y;
    }
 
+   public int getDistance()
+   {
+      return distance;
+   }
 
-
+   public void setDistance(int distance)
+   {
+      this.distance = distance;
+   }
 
    @Override
    public String toString()
