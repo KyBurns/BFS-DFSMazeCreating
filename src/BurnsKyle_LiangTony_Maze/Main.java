@@ -4,7 +4,7 @@ public class Main
 {
    public static void main(String[] args)
    {
-      Maze m = new Maze(8, 1);
+      Maze m = new Maze(4, 1);
       m.generateRoom();
 
       m.removeWalls();
