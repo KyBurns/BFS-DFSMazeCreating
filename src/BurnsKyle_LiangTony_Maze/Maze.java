@@ -24,6 +24,17 @@ public class Maze {
       return maze;
    }
 
+   public int getArrayLength() {
+      return arrayLength;
+   }
+   public int getSize() {
+      return size;
+   }
+
+   public boolean[][] gettfmaze(){
+      return tfmaze;
+   }
+
    public void generateRoom() {
 		//System.out.println(maze[0].length);
 	      for (int i = 0; i < arrayLength; i += 2) {
@@ -50,38 +61,99 @@ public class Maze {
 //=======================================================================================================================================
 	public void removeWalls() {
       initializeTfmaze();
-
 		Stack<Cell> cellStack = new Stack<>();
 		int totalCells = size*size;
 		Cell currentCell = new Cell(1,1);
-
 		int visitedCells = 1;
-
       while(visitedCells<totalCells) {
-
-         //System.out.println("current cell is " + currentCell);
          ArrayList<Cell> neighbors = findNeighbors(currentCell);
-
-         //printCellStack(cellStack);
          if (neighbors.size() > 0) {
             Cell randomNeighbor = neighbors.get((int) (myrandom() * neighbors.size()));
-            //System.out.println("ranN is " + randomNeighbor);
             tfmaze[randomNeighbor.getY()][randomNeighbor.getX()] = true;
             int wallx = (randomNeighbor.getX() + currentCell.getX()) / 2;
             int wally = (randomNeighbor.getY() + currentCell.getY()) / 2;
-
             maze[wally][wallx] = ' ';
-
             cellStack.push(currentCell);
             currentCell = randomNeighbor;
             visitedCells += 1;
          } else {
             currentCell = cellStack.pop();
          }
-
       }
 	}
 
+   public void bfsTraversing () {
+	   char[][] mazeCopy = this.maze;
+	   char[][] routeMaze = this.maze;
+	   Cell end = new Cell(arrayLength-1, arrayLength-1);
+      initializeTfmaze();
+      Queue<Cell> queue = new ArrayDeque<>();
+      Cell head = new Cell(1,1);
+      queue.offer(head);
+      int counter = 0;
+      while (!queue.isEmpty()) {
+         Cell cur = queue.poll();
+         int curX = cur.getX();
+         int curY = cur.getY();
+         mazeCopy[cur.getY()][cur.getX()] = (char) (counter % 10 + 48);
+//         printMaze(mazeCopy);
+         System.out.println(cur);
+//         if (curX == arrayLength - 1 && curY == arrayLength - 1) {
+//            end = cur;
+//         }
+         counter ++;
+         ArrayList<Cell> visitableNeighbors = new ArrayList<>();
+         tfmaze[curY][curX] = true;
+         //look up
+         if (curY - 2 > 0 && mazeCopy[curY - 1][curX] == ' ' && !tfmaze[curY - 2][curX]) {
+            Cell nextCell = new Cell(cur.getX(), cur.getY() - 2);
+            nextCell.setParent(cur);
+            visitableNeighbors.add(nextCell);
+         }
+         //look left
+         if (curX - 2 > 0 && mazeCopy[curY][curX - 1] == ' ' && !tfmaze[curY][curX - 2]) {
+            Cell nextCell = new Cell(cur.getX() - 2, cur.getY());
+            nextCell.setParent(cur);
+
+            visitableNeighbors.add(nextCell);
+         }
+         //look down
+         if (curY + 2 < arrayLength && mazeCopy[curY + 1][curX] == ' ' && !tfmaze[curY + 2][curX]) {
+            Cell nextCell = new Cell(cur.getX(), cur.getY() + 2);
+            nextCell.setParent(cur);
+            visitableNeighbors.add(nextCell);
+         }
+         //look right
+         if (curX + 2 < arrayLength && mazeCopy[curY][curX+ 1] == ' ' && !tfmaze[curY][curX + 2]) {
+            Cell nextCell = new Cell(cur.getX() + 2, cur.getY());
+            nextCell.setParent(cur);
+            visitableNeighbors.add(nextCell);
+         }
+         for (Cell c: visitableNeighbors) {
+            queue.offer(c);
+         }
+      }
+      printMaze(mazeCopy);
+      System.out.println();
+      System.out.println();
+      System.out.println();
+      printMaze(routeMaze);
+      System.out.println();
+      System.out.println();
+      System.out.println();
+
+      Cell pointer = end;
+      while (pointer.getParent() != null) {
+         routeMaze[pointer.getY()][pointer.getX()] = '#';
+
+         pointer = pointer.getParent();
+      }
+
+      printMaze(routeMaze);
+
+
+
+   }
 
 
    public static void printMaze(char[][] maze) {
@@ -92,49 +164,6 @@ public class Maze {
          System.out.println();
       }
    }
-
-   public void bfsTraversing () {
-	   char[][] mazeCopy = this.maze;
-      initializeTfmaze();
-      Queue<Cell> queue = new ArrayDeque<>();
-      Cell head = new Cell(1,1);
-      queue.offer(head);
-      int counter = 0;
-      while (!queue.isEmpty()) {
-         Cell cur = queue.poll();
-         mazeCopy[cur.getY()][cur.getX()] = (char) (counter % 10 + 48);
-         counter ++;
-         ArrayList<Cell> visitableNeighbors = new ArrayList<>();
-         int curX = cur.getX();
-         int curY = cur.getY();
-         tfmaze[curY][curX] = true;
-         //look up
-         if (curY - 2 > 0 && mazeCopy[curY - 1][curX] == ' ' && !tfmaze[curY - 2][curX]) {
-            Cell nextCell = new Cell(cur.getX(), cur.getY() - 2);
-            visitableNeighbors.add(nextCell);
-         }
-         //look left
-         if (curX - 2 > 0 && mazeCopy[curY][curX - 1] == ' ' && !tfmaze[curY][curX - 2]) {
-            Cell nextCell = new Cell(cur.getX() - 2, cur.getY());
-            visitableNeighbors.add(nextCell);
-         }
-         //look down
-         if (curY + 2 < arrayLength && mazeCopy[curY + 1][curX] == ' ' && !tfmaze[curY + 2][curX]) {
-            Cell nextCell = new Cell(cur.getX(), cur.getY() + 2);
-            visitableNeighbors.add(nextCell);
-         }
-         //look right
-         if (curX + 2 < arrayLength && mazeCopy[curY][curX+ 1] == ' ' && !tfmaze[curY][curX + 2]) {
-            Cell nextCell = new Cell(cur.getX() + 2, cur.getY());
-            visitableNeighbors.add(nextCell);
-         }
-         for (Cell c: visitableNeighbors) {
-            queue.offer(c);
-         }
-      }
-      printMaze(mazeCopy);
-   }
-
 
    private double myrandom() {
       return myRandGen.nextDouble(); //random in 0-1

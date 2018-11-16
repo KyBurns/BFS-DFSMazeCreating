@@ -4,8 +4,7 @@ public class Cell
 {
    private int x;
    private int y;
-   private boolean visited;
-   private int distance;
+   private Cell parent;
 
 
 
@@ -13,7 +12,7 @@ public class Cell
    {
       this.x = x;
       this.y = y;
-      distance = 0;
+      parent = null;
    }
 
    public int getX()
@@ -21,30 +20,22 @@ public class Cell
       return x;
    }
 
-   public void setX(int x)
-   {
-      this.x = x;
-   }
-
    public int getY()
    {
       return y;
    }
 
-   public void setY(int y)
+   public Cell getParent()
    {
-      this.y = y;
+      return parent;
    }
 
-   public int getDistance()
+   public void setParent(Cell parent)
    {
-      return distance;
+      this.parent = parent;
    }
 
-   public void setDistance(int distance)
-   {
-      this.distance = distance;
-   }
+
 
    @Override
    public String toString()
