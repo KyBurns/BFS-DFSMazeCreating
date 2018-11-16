@@ -11,5 +11,6 @@ public class Main
       Maze.printMaze(m.getMaze());
       System.out.println();
       m.bfsTraversing();
+      m.dfsTraversing();
    }
 }
