@@ -105,39 +105,14 @@ public class Maze {
          int curY = cur.getY();
          mazeCopy[cur.getY()][cur.getX()] = (char) (counter % 10 + 48);
 
-
          if (curX == arrayLength - 2 && curY == arrayLength - 2) {
             end = cur;
             break;
          }
          counter ++;
-         ArrayList<Cell> visitableNeighbors = new ArrayList<>();
          tfmaze[curY][curX] = true;
-         //look up
-         if (curY - 2 > 0 && mazeCopy[curY - 1][curX] == ' ' && !tfmaze[curY - 2][curX]) {
-            Cell nextCell = new Cell(cur.getX(), cur.getY() - 2);
-            nextCell.setParent(cur);
-            visitableNeighbors.add(nextCell);
-         }
-         //look left
-         if (curX - 2 > 0 && mazeCopy[curY][curX - 1] == ' ' && !tfmaze[curY][curX - 2]) {
-            Cell nextCell = new Cell(cur.getX() - 2, cur.getY());
-            nextCell.setParent(cur);
+         ArrayList<Cell> visitableNeighbors = findVisitableNeighbors(tfmaze,mazeCopy,cur);
 
-            visitableNeighbors.add(nextCell);
-         }
-         //look down
-         if (curY + 2 < arrayLength && mazeCopy[curY + 1][curX] == ' ' && !tfmaze[curY + 2][curX]) {
-            Cell nextCell = new Cell(cur.getX(), cur.getY() + 2);
-            nextCell.setParent(cur);
-            visitableNeighbors.add(nextCell);
-         }
-         //look right
-         if (curX + 2 < arrayLength && mazeCopy[curY][curX+ 1] == ' ' && !tfmaze[curY][curX + 2]) {
-            Cell nextCell = new Cell(cur.getX() + 2, cur.getY());
-            nextCell.setParent(cur);
-            visitableNeighbors.add(nextCell);
-         }
          for (Cell c: visitableNeighbors) {
             queue.offer(c);
          }
@@ -195,6 +170,40 @@ public class Maze {
          }
       }
    }
+   //==========================================================================================================================
+   private ArrayList<Cell> findVisitableNeighbors(boolean[][] tfmaze, char[][] mazeCopy, Cell cur) {
+      ArrayList<Cell> visitableNeighbors = new ArrayList<>();
+      int curX = cur.getX();
+      int curY = cur.getY();
+      //look up
+      if (curY - 2 > 0 && mazeCopy[curY - 1][curX] == ' ' && !tfmaze[curY - 2][curX]) {
+         Cell nextCell = new Cell(cur.getX(), cur.getY() - 2);
+         nextCell.setParent(cur);
+         visitableNeighbors.add(nextCell);
+      }
+      //look left
+      if (curX - 2 > 0 && mazeCopy[curY][curX - 1] == ' ' && !tfmaze[curY][curX - 2]) {
+         Cell nextCell = new Cell(cur.getX() - 2, cur.getY());
+         nextCell.setParent(cur);
+
+         visitableNeighbors.add(nextCell);
+      }
+      //look down
+      if (curY + 2 < arrayLength && mazeCopy[curY + 1][curX] == ' ' && !tfmaze[curY + 2][curX]) {
+         Cell nextCell = new Cell(cur.getX(), cur.getY() + 2);
+         nextCell.setParent(cur);
+         visitableNeighbors.add(nextCell);
+      }
+      //look right
+      if (curX + 2 < arrayLength && mazeCopy[curY][curX+ 1] == ' ' && !tfmaze[curY][curX + 2]) {
+         Cell nextCell = new Cell(cur.getX() + 2, cur.getY());
+         nextCell.setParent(cur);
+         visitableNeighbors.add(nextCell);
+      }
+
+      return visitableNeighbors;
+   }
+
    //==========================================================================================================================
    private ArrayList<Cell> findNeighbors (Cell currentCell) {
       ArrayList<Cell> neighbors = new ArrayList<>();

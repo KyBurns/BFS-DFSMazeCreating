@@ -2,9 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0675d114-0e3c-480b-a345-dad53d3b311e" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/bin/BurnsKyle_LiangTony_Maze/Maze.class" afterPath="$PROJECT_DIR$/bin/BurnsKyle_LiangTony_Maze/Maze.class" />
-      <change beforePath="$PROJECT_DIR$/src/BurnsKyle_LiangTony_Maze/Main.java" afterPath="$PROJECT_DIR$/src/BurnsKyle_LiangTony_Maze/Main.java" />
       <change beforePath="$PROJECT_DIR$/src/BurnsKyle_LiangTony_Maze/Maze.java" afterPath="$PROJECT_DIR$/src/BurnsKyle_LiangTony_Maze/Maze.java" />
     </list>
     <ignored path="$PROJECT_DIR$/bin/" />
@@ -28,8 +25,8 @@
       <file leaf-file-name="Maze.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/BurnsKyle_LiangTony_Maze/Maze.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="295">
-              <caret line="156" column="8" lean-forward="true" selection-start-line="156" selection-start-column="8" selection-end-line="156" selection-end-column="8" />
+            <state relative-caret-position="952">
+              <caret line="230" column="32" lean-forward="false" selection-start-line="230" selection-start-column="32" selection-end-line="230" selection-end-column="32" />
               <folding>
                 <element signature="e#739#740#0" expanded="true" />
                 <element signature="e#763#764#0" expanded="true" />
@@ -39,8 +36,8 @@
                 <element signature="e#878#879#0" expanded="true" />
                 <element signature="e#914#915#0" expanded="true" />
                 <element signature="e#940#941#0" expanded="true" />
-                <element signature="e#8286#8287#0" expanded="true" />
-                <element signature="e#8344#8345#0" expanded="true" />
+                <element signature="e#6831#6832#0" expanded="true" />
+                <element signature="e#6889#6890#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -322,12 +319,12 @@
       <workItem from="1541982111660" duration="7234000" />
       <workItem from="1542222452581" duration="869000" />
       <workItem from="1542223372039" duration="14909000" />
-      <workItem from="1542261557912" duration="14955000" />
+      <workItem from="1542261557912" duration="15573000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="37967000" />
+    <option name="totallyTimeSpent" value="38585000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1080" height="1897" extended-state="6" />
@@ -335,13 +332,13 @@
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32732734" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32698768" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.43449047" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.43449047" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32956383" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.15397537" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -475,8 +472,8 @@
             <element signature="e#878#879#0" expanded="true" />
             <element signature="e#914#915#0" expanded="true" />
             <element signature="e#940#941#0" expanded="true" />
-            <element signature="e#8286#8287#0" expanded="true" />
-            <element signature="e#8344#8345#0" expanded="true" />
+            <element signature="e#6831#6832#0" expanded="true" />
+            <element signature="e#6889#6890#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -519,8 +516,8 @@
             <element signature="e#878#879#0" expanded="true" />
             <element signature="e#914#915#0" expanded="true" />
             <element signature="e#940#941#0" expanded="true" />
-            <element signature="e#8286#8287#0" expanded="true" />
-            <element signature="e#8344#8345#0" expanded="true" />
+            <element signature="e#6831#6832#0" expanded="true" />
+            <element signature="e#6889#6890#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -575,8 +572,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/BurnsKyle_LiangTony_Maze/Maze.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="295">
-          <caret line="156" column="8" lean-forward="true" selection-start-line="156" selection-start-column="8" selection-end-line="156" selection-end-column="8" />
+        <state relative-caret-position="952">
+          <caret line="230" column="32" lean-forward="false" selection-start-line="230" selection-start-column="32" selection-end-line="230" selection-end-column="32" />
           <folding>
             <element signature="e#739#740#0" expanded="true" />
             <element signature="e#763#764#0" expanded="true" />
@@ -586,8 +583,8 @@
             <element signature="e#878#879#0" expanded="true" />
             <element signature="e#914#915#0" expanded="true" />
             <element signature="e#940#941#0" expanded="true" />
-            <element signature="e#8286#8287#0" expanded="true" />
-            <element signature="e#8344#8345#0" expanded="true" />
+            <element signature="e#6831#6832#0" expanded="true" />
+            <element signature="e#6889#6890#0" expanded="true" />
           </folding>
         </state>
       </provider>
