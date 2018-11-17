@@ -2,9 +2,10 @@ package BurnsKyle_LiangTony_Maze;
 
 public class Cell
 {
-   private int x;
-   private int y;
-   private Cell parent;
+   private int x; // the x coordinate of cell
+
+   private int y; // the y coordinate of cell
+   private Cell parent; // the parent of the cell
 
 
 
