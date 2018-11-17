@@ -2,14 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0675d114-0e3c-480b-a345-dad53d3b311e" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/BurnsKyle_LiangTony_Maze/MazeTest.java" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/Project2.iml" afterPath="$PROJECT_DIR$/Project2.iml" />
-      <change beforePath="$PROJECT_DIR$/bin/BurnsKyle_LiangTony_Maze/Main.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/bin/BurnsKyle_LiangTony_Maze/Maze.class" afterPath="$PROJECT_DIR$/bin/BurnsKyle_LiangTony_Maze/Maze.class" />
-      <change beforePath="$PROJECT_DIR$/src/BurnsKyle_LiangTony_Maze/Cell.java" afterPath="$PROJECT_DIR$/src/BurnsKyle_LiangTony_Maze/Cell.java" />
-      <change beforePath="$PROJECT_DIR$/src/BurnsKyle_LiangTony_Maze/Main.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/BurnsKyle_LiangTony_Maze/Maze.java" afterPath="$PROJECT_DIR$/src/BurnsKyle_LiangTony_Maze/Maze.java" />
+      <change beforePath="$PROJECT_DIR$/src/BurnsKyle_LiangTony_Maze/MazeTest.java" afterPath="$PROJECT_DIR$/src/BurnsKyle_LiangTony_Maze/MazeTest.java" />
     </list>
     <ignored path="$PROJECT_DIR$/bin/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -32,7 +25,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Maze.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Maze.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/BurnsKyle_LiangTony_Maze/Maze.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="8346">
@@ -53,15 +46,12 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MazeTest.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="MazeTest.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/BurnsKyle_LiangTony_Maze/MazeTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="506">
-              <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
-              <folding>
-                <element signature="e#190#191#0" expanded="true" />
-                <element signature="e#228#229#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="350">
+              <caret line="39" column="32" lean-forward="true" selection-start-line="39" selection-start-column="32" selection-end-line="39" selection-end-column="32" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -114,9 +104,9 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/BurnsKyle_LiangTony_Maze/Main.java" />
-        <option value="$PROJECT_DIR$/src/BurnsKyle_LiangTony_Maze/MazeTest.java" />
         <option value="$PROJECT_DIR$/src/BurnsKyle_LiangTony_Maze/Cell.java" />
         <option value="$PROJECT_DIR$/src/BurnsKyle_LiangTony_Maze/Maze.java" />
+        <option value="$PROJECT_DIR$/src/BurnsKyle_LiangTony_Maze/MazeTest.java" />
       </list>
     </option>
   </component>
@@ -206,7 +196,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.MazeTest.MazeTest">
+  <component name="RunManager" selected="JUnit.MazeTest.test3">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="HTML_USED" value="false" />
       <option name="WIDTH" value="400" />
@@ -278,56 +268,6 @@
       <envs />
       <patterns />
     </configuration>
-    <configuration name="MazeTest.generateRoom" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="BurnsKyle_LiangTony_Maze.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="Project2" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="BurnsKyle_LiangTony_Maze" />
-      <option name="MAIN_CLASS_NAME" value="BurnsKyle_LiangTony_Maze.MazeTest" />
-      <option name="METHOD_NAME" value="generateRoom" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-    </configuration>
-    <configuration name="MazeTest.removeWalls" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="BurnsKyle_LiangTony_Maze.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="Project2" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="BurnsKyle_LiangTony_Maze" />
-      <option name="MAIN_CLASS_NAME" value="BurnsKyle_LiangTony_Maze.MazeTest" />
-      <option name="METHOD_NAME" value="removeWalls" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-    </configuration>
     <configuration name="MazeTest.test1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -341,6 +281,56 @@
       <option name="PACKAGE_NAME" value="BurnsKyle_LiangTony_Maze" />
       <option name="MAIN_CLASS_NAME" value="BurnsKyle_LiangTony_Maze.MazeTest" />
       <option name="METHOD_NAME" value="test1" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="file://%MODULE_WORKING_DIR%" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+    </configuration>
+    <configuration name="MazeTest.test2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="BurnsKyle_LiangTony_Maze.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="Project2" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="BurnsKyle_LiangTony_Maze" />
+      <option name="MAIN_CLASS_NAME" value="BurnsKyle_LiangTony_Maze.MazeTest" />
+      <option name="METHOD_NAME" value="test2" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+    </configuration>
+    <configuration name="MazeTest.test3" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="BurnsKyle_LiangTony_Maze.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="Project2" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="BurnsKyle_LiangTony_Maze" />
+      <option name="MAIN_CLASS_NAME" value="BurnsKyle_LiangTony_Maze.MazeTest" />
+      <option name="METHOD_NAME" value="test3" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -414,19 +404,19 @@
       <predefined_log_file id="idea.log" enabled="true" />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="JUnit.MazeTest.test1" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.MazeTest.generateRoom" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.MazeTest.removeWalls" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.MazeTest.bfsTraversing" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.MazeTest.MazeTest" />
+      <item index="0" class="java.lang.String" itemvalue="JUnit.MazeTest.bfsTraversing" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.MazeTest.MazeTest" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.MazeTest.test1" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.MazeTest.test2" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.MazeTest.test3" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.MazeTest.MazeTest" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.MazeTest.bfsTraversing" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.MazeTest.removeWalls" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.MazeTest.generateRoom" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.MazeTest.test1" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.MazeTest.test3" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.MazeTest.test2" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.MazeTest.test1" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.MazeTest.MazeTest" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.MazeTest.bfsTraversing" />
       </list>
     </recent_temporary>
   </component>
@@ -449,44 +439,44 @@
       <workItem from="1541982111660" duration="7234000" />
       <workItem from="1542222452581" duration="869000" />
       <workItem from="1542223372039" duration="14909000" />
-      <workItem from="1542261557912" duration="28745000" />
+      <workItem from="1542261557912" duration="29128000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="MazeTest_MazeTest - 2018.11.16 at 20h 17m 04s.xml">
-      <configuration name="MazeTest.MazeTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="MazeTest_MazeTest - 2018.11.16 at 20h 17m 40s.xml">
-      <configuration name="MazeTest.MazeTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="MazeTest_MazeTest - 2018.11.16 at 20h 18m 43s.xml">
-      <configuration name="MazeTest.MazeTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="MazeTest_MazeTest - 2018.11.16 at 20h 19m 08s.xml">
-      <configuration name="MazeTest.MazeTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="MazeTest_MazeTest - 2018.11.16 at 20h 19m 14s.xml">
-      <configuration name="MazeTest.MazeTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="MazeTest_MazeTest - 2018.11.16 at 20h 20m 28s.xml">
-      <configuration name="MazeTest.MazeTest" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="MazeTest_MazeTest - 2018.11.16 at 20h 20m 33s.xml">
       <configuration name="MazeTest.MazeTest" configurationId="JUnit" />
     </history-entry>
     <history-entry file="MazeTest_MazeTest - 2018.11.16 at 20h 21m 07s.xml">
       <configuration name="MazeTest.MazeTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MazeTest_bfsTraversing - 2018.11.16 at 20h 15m 25s.xml">
-      <configuration name="MazeTest.bfsTraversing" configurationId="JUnit" />
+    <history-entry file="MazeTest_MazeTest - 2018.11.16 at 21h 09m 07s.xml">
+      <configuration name="MazeTest.MazeTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MazeTest_bfsTraversing - 2018.11.16 at 20h 16m 07s.xml">
-      <configuration name="MazeTest.bfsTraversing" configurationId="JUnit" />
+    <history-entry file="MazeTest_MazeTest - 2018.11.16 at 21h 09m 45s.xml">
+      <configuration name="MazeTest.MazeTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MazeTest_MazeTest - 2018.11.16 at 21h 10m 18s.xml">
+      <configuration name="MazeTest.MazeTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MazeTest_MazeTest1 - 2018.11.16 at 21h 09m 51s.xml">
+      <configuration name="MazeTest.MazeTest1" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MazeTest_MazeTest1 - 2018.11.16 at 21h 10m 29s.xml">
+      <configuration name="MazeTest.MazeTest1" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MazeTest_MazeTest1 - 2018.11.16 at 21h 12m 09s.xml">
+      <configuration name="MazeTest.MazeTest1" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MazeTest_test1 - 2018.11.16 at 21h 12m 32s.xml">
+      <configuration name="MazeTest.test1" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MazeTest_test2 - 2018.11.16 at 21h 12m 39s.xml">
+      <configuration name="MazeTest.test2" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="51757000" />
+    <option name="totallyTimeSpent" value="52140000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1080" height="1897" extended-state="6" />
@@ -732,17 +722,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/BurnsKyle_LiangTony_Maze/MazeTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="506">
-          <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
-          <folding>
-            <element signature="e#190#191#0" expanded="true" />
-            <element signature="e#228#229#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/BurnsKyle_LiangTony_Maze/Maze.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="8346">
@@ -759,6 +738,14 @@
             <element signature="e#7708#7709#0" expanded="true" />
             <element signature="e#7766#7767#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/BurnsKyle_LiangTony_Maze/MazeTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="350">
+          <caret line="39" column="32" lean-forward="true" selection-start-line="39" selection-start-column="32" selection-end-line="39" selection-end-column="32" />
+          <folding />
         </state>
       </provider>
     </entry>
